@@ -20,7 +20,7 @@
 
 
 int getCmd(char *text){
-
+	printf("test\n");
   struct pollfd mypoll = { STDIN_FILENO, POLLIN|POLLPRI };
 
   if(poll(&mypoll,1,TIMEOUT_STDIN)){
